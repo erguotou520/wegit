@@ -41,9 +41,9 @@ class Welcome extends StatelessWidget {
                       padding: EdgeInsets.fromLTRB(24, 12, 24, 12),
                       child: new Text('Github', style: new TextStyle(fontSize: 16)),
                       onPressed: () {
-                        // Navigator.push(context, MaterialPageRoute(
-                        //   builder: (context) => new Login('github')
-                        // ));
+                        Navigator.push(context, MaterialPageRoute(
+                          builder: (context) => new Login('github')
+                        ));
                       },
                     ),
                   )
@@ -53,31 +53,6 @@ class Welcome extends StatelessWidget {
           }
         },
       )
-      // body: new Container(
-      //   width: double.infinity,
-      //   height: double.infinity,
-      //   color: Colors.blue,
-      //   child: new Center(
-      //     child: new Column(
-      //       mainAxisAlignment: MainAxisAlignment.center,
-      //       children: <Widget>[
-      //         new Text(
-      //           'Welcome to WeGit',
-      //           style: new TextStyle(fontSize: 36, color: Colors.white),
-      //         ),
-      //         new Padding(
-      //           padding: const EdgeInsets.only(top: 78.0),
-      //           child: new IconButton(
-      //             onPressed: (() => Navigator.of(context).pushNamed('/login')),
-      //             icon: new Icon(Icons.arrow_forward),
-      //             iconSize: 60.0,
-      //             color: Colors.white,
-      //           ),
-      //         )
-      //       ],
-      //     ),
-      //   ),
-      // )
     );
   }
 }
